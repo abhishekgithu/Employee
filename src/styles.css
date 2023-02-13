@@ -1,8 +1,6 @@
 * {
     box-sizing: border-box;
-    margin-top: 0px;
-    /* margin-left: 0px;
-    margin-right: 0px; */
+    margin-top: 0;
     margin-bottom: -1px;
   }
   h1{
@@ -43,7 +41,7 @@
 
   
   input {
-    -webkit-appearance: none;
+    appearance: none;
     border: 1px solid gray;
     padding: 0.5rem;
     width: 100%;

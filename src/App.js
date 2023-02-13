@@ -1,17 +1,17 @@
-import { useState } from "react";
 import "./styles.css";
 
 import { Table } from "./Table";
 
 export default function App() {
-  const [columns,setColumns] = useState([
+  
+  const columns = [
     { accessor: "sno", label: "S.No" },
     { accessor: "name", label: "Name" },
     { accessor: "age", label: "Age" },
     { accessor: "start_date", label: "Join Date" },
     { accessor: "designation", label: "Designation" },
     { accessor: "salary", label: "Salary" },
-  ]);
+  ];
 
   const rows = [
     {

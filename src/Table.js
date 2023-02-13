@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import React from "react";
 import { sortRows, filterRows, paginateRows } from "./helpers";
 import { Pagination } from "./Pagination";
 import PropTypes from 'prop-types';

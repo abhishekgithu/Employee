@@ -1,6 +1,8 @@
 import { useState, useMemo } from "react";
 import { sortRows, filterRows, paginateRows } from "./helpers";
 import { Pagination } from "./Pagination";
+import PropTypes from 'prop-types';
+
 
 export const Table = ({ columns, rows }) => {
   const [activePage, setActivePage] = useState(1);
@@ -139,6 +141,11 @@ export const Table = ({ columns, rows }) => {
       </div>
     </>
   );
+};
+
+Table.propTypes = {
+  columns: PropTypes.array.isRequired,
+  rows: PropTypes.array.isRequired
 };
 
 
